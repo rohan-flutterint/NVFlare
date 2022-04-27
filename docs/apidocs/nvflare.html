@@ -1,0 +1,451 @@
+<!--
+# Copyright (c) 2020, NVIDIA CORPORATION. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions
+# are met:
+#  * Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#  * Redistributions in binary form must reproduce the above copyright
+#    notice, this list of conditions and the following disclaimer in the
+#    documentation and/or other materials provided with the distribution.
+#  * Neither the name of NVIDIA CORPORATION nor the names of its
+#    contributors may be used to endorse or promote products derived
+#    from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY
+# EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+# PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+# OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nvflare package &mdash; NVIDIA FLARE 2.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/additions.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="nvflare.apis package" href="nvflare.apis.html" />
+    <link rel="prev" title="nvflare" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" > 
+            <a href="../index.html" class="icon icon-home"> NVIDIA FLARE
+          </a>
+              <div class="version">
+                2.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #76b900;
+    }
+
+    .wy-side-nav-search a:link, .wy-nav-top a:link {
+      color: #fff;
+    }
+    .wy-side-nav-search a:visited, .wy-nav-top a:visited {
+      color: #fff;
+    }
+    .wy-side-nav-search a:hover, .wy-nav-top a:hover {
+      color: #fff;
+    }
+
+    .wy-menu-vertical a:link, .wy-menu-vertical a:visited {
+      color: #d9d9d9
+    }
+
+    .wy-menu-vertical a:active {
+      background-color: #76b900
+    }
+
+    .wy-side-nav-search>div.version {
+      color: rgba(0, 0, 0, 0.3)
+    }
+
+    .wy-nav-content {
+      max-width: 80%;
+    }
+
+    .floatleftcol {
+      float: left;
+      max-width: 60%;
+      padding-right: 20px;
+    }
+  </style>
+  
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../highlights.html">NVIDIA FLARE Key Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">User Guide - Provision, Start, Operate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming_guide.html">Programming Guide - Developing Apps with NVIDIA FLARE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">nvflare package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.html">nvflare.apis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.html">nvflare.app_common package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.html">nvflare.fuel package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.lighter.html">nvflare.lighter package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.security.html">nvflare.security package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.widgets.html">nvflare.widgets package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html">Appendix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NVIDIA FLARE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">nvflare</a> &raquo;</li>
+      <li>nvflare package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/apidocs/nvflare.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-nvflare">
+<span id="nvflare-package"></span><h1>nvflare package<a class="headerlink" href="#module-nvflare" title="Permalink to this headline">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="nvflare.apis.html">nvflare.apis package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.apis.impl.html">nvflare.apis.impl package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.impl.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.impl.html#module-nvflare.apis.impl.any_relay_manager">nvflare.apis.impl.any_relay_manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.impl.html#module-nvflare.apis.impl.bcast_manager">nvflare.apis.impl.bcast_manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.impl.html#module-nvflare.apis.impl.controller">nvflare.apis.impl.controller module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.impl.html#module-nvflare.apis.impl.send_manager">nvflare.apis.impl.send_manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.impl.html#module-nvflare.apis.impl.seq_relay_manager">nvflare.apis.impl.seq_relay_manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.impl.html#module-nvflare.apis.impl.task_manager">nvflare.apis.impl.task_manager module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.apis.utils.html">nvflare.apis.utils package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.utils.html#module-nvflare.apis.utils.common_utils">nvflare.apis.utils.common_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.utils.html#module-nvflare.apis.utils.fl_context_utils">nvflare.apis.utils.fl_context_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.apis.utils.html#module-nvflare.apis.utils.format_check">nvflare.apis.utils.format_check module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.analytix">nvflare.apis.analytix module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.app_validation">nvflare.apis.app_validation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.aux_spec">nvflare.apis.aux_spec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.client">nvflare.apis.client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.client_engine_spec">nvflare.apis.client_engine_spec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.controller_spec">nvflare.apis.controller_spec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.dxo">nvflare.apis.dxo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.event_type">nvflare.apis.event_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.executor">nvflare.apis.executor module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.filter">nvflare.apis.filter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.fl_component">nvflare.apis.fl_component module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.fl_constant">nvflare.apis.fl_constant module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.fl_context">nvflare.apis.fl_context module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.fl_exception">nvflare.apis.fl_exception module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.responder">nvflare.apis.responder module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.server_engine_spec">nvflare.apis.server_engine_spec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.shareable">nvflare.apis.shareable module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.signal">nvflare.apis.signal module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.apis.html#module-nvflare.apis.workspace">nvflare.apis.workspace module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nvflare.app_common.html">nvflare.app_common package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.app_common.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.abstract.html">nvflare.app_common.abstract package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.aggregator">nvflare.app_common.abstract.aggregator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.formatter">nvflare.app_common.abstract.formatter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.learnable">nvflare.app_common.abstract.learnable module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.learnable_persistor">nvflare.app_common.abstract.learnable_persistor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.learner_spec">nvflare.app_common.abstract.learner_spec module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.model">nvflare.app_common.abstract.model module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.model_locator">nvflare.app_common.abstract.model_locator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.model_persistor">nvflare.app_common.abstract.model_persistor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.model_processor">nvflare.app_common.abstract.model_processor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.abstract.html#module-nvflare.app_common.abstract.shareable_generator">nvflare.app_common.abstract.shareable_generator module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.aggregators.html">nvflare.app_common.aggregators package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.aggregators.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.aggregators.html#module-nvflare.app_common.aggregators.accumulate_model_aggregator">nvflare.app_common.aggregators.accumulate_model_aggregator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.aggregators.html#module-nvflare.app_common.aggregators.dxo_aggregator">nvflare.app_common.aggregators.dxo_aggregator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.aggregators.html#module-nvflare.app_common.aggregators.intime_accumulate_model_aggregator">nvflare.app_common.aggregators.intime_accumulate_model_aggregator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.aggregators.html#module-nvflare.app_common.aggregators.weighted_aggregation_helper">nvflare.app_common.aggregators.weighted_aggregation_helper module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.executors.html">nvflare.app_common.executors package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.executors.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.executors.html#module-nvflare.app_common.executors.learner_executor">nvflare.app_common.executors.learner_executor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.executors.html#module-nvflare.app_common.executors.multi_process_executor">nvflare.app_common.executors.multi_process_executor module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.filters.html">nvflare.app_common.filters package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.filters.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.filters.html#module-nvflare.app_common.filters.convert_weights">nvflare.app_common.filters.convert_weights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.filters.html#module-nvflare.app_common.filters.exclude_vars">nvflare.app_common.filters.exclude_vars module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.filters.html#module-nvflare.app_common.filters.percentile_privacy">nvflare.app_common.filters.percentile_privacy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.filters.html#module-nvflare.app_common.filters.svt_privacy">nvflare.app_common.filters.svt_privacy module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.handlers.html">nvflare.app_common.handlers package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.handlers.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.handlers.html#module-nvflare.app_common.handlers.event_recorder">nvflare.app_common.handlers.event_recorder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.handlers.html#module-nvflare.app_common.handlers.intime_model_selection_handler">nvflare.app_common.handlers.intime_model_selection_handler module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.homomorphic_encryption.html">nvflare.app_common.homomorphic_encryption package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.homomorphic_encryption.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.homomorphic_encryption.html#module-nvflare.app_common.homomorphic_encryption.he_constant">nvflare.app_common.homomorphic_encryption.he_constant module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.homomorphic_encryption.html#module-nvflare.app_common.homomorphic_encryption.he_intime_accumulate_model_aggregator">nvflare.app_common.homomorphic_encryption.he_intime_accumulate_model_aggregator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.homomorphic_encryption.html#module-nvflare.app_common.homomorphic_encryption.he_model_decryptor">nvflare.app_common.homomorphic_encryption.he_model_decryptor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.homomorphic_encryption.html#module-nvflare.app_common.homomorphic_encryption.he_model_encryptor">nvflare.app_common.homomorphic_encryption.he_model_encryptor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.homomorphic_encryption.html#module-nvflare.app_common.homomorphic_encryption.he_model_shareable_generator">nvflare.app_common.homomorphic_encryption.he_model_shareable_generator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.homomorphic_encryption.html#module-nvflare.app_common.homomorphic_encryption.he_pt_model_reader_writer">nvflare.app_common.homomorphic_encryption.he_pt_model_reader_writer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.homomorphic_encryption.html#module-nvflare.app_common.homomorphic_encryption.homomorphic_encrypt">nvflare.app_common.homomorphic_encryption.homomorphic_encrypt module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.pt.html">nvflare.app_common.pt package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#module-nvflare.app_common.pt.pt_fed_utils">nvflare.app_common.pt.pt_fed_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#module-nvflare.app_common.pt.pt_fedopt">nvflare.app_common.pt.pt_fedopt module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#module-nvflare.app_common.pt.pt_fedproxloss">nvflare.app_common.pt.pt_fedproxloss module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#module-nvflare.app_common.pt.pt_file_model_locator">nvflare.app_common.pt.pt_file_model_locator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#module-nvflare.app_common.pt.pt_file_model_persistor">nvflare.app_common.pt.pt_file_model_persistor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#module-nvflare.app_common.pt.pt_model_reader_writer">nvflare.app_common.pt.pt_model_reader_writer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#module-nvflare.app_common.pt.pt_multi_process_executor">nvflare.app_common.pt.pt_multi_process_executor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#module-nvflare.app_common.pt.pt_scaffold">nvflare.app_common.pt.pt_scaffold module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.pt.html#nvflare-app-common-pt-tb-receiver-module">nvflare.app_common.pt.tb_receiver module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.shareablegenerators.html">nvflare.app_common.shareablegenerators package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.shareablegenerators.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.shareablegenerators.html#module-nvflare.app_common.shareablegenerators.full_model_shareable_generator">nvflare.app_common.shareablegenerators.full_model_shareable_generator module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.widgets.html">nvflare.app_common.widgets package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.widgets.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.widgets.html#module-nvflare.app_common.widgets.convert_to_fed_event">nvflare.app_common.widgets.convert_to_fed_event module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.widgets.html#module-nvflare.app_common.widgets.streaming">nvflare.app_common.widgets.streaming module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.widgets.html#module-nvflare.app_common.widgets.validation_json_generator">nvflare.app_common.widgets.validation_json_generator module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.app_common.workflows.html">nvflare.app_common.workflows package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.workflows.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.workflows.html#module-nvflare.app_common.workflows.cross_site_model_eval">nvflare.app_common.workflows.cross_site_model_eval module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.workflows.html#module-nvflare.app_common.workflows.cyclic_ctl">nvflare.app_common.workflows.cyclic_ctl module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.workflows.html#module-nvflare.app_common.workflows.global_model_eval">nvflare.app_common.workflows.global_model_eval module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.workflows.html#module-nvflare.app_common.workflows.scatter_and_gather">nvflare.app_common.workflows.scatter_and_gather module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.app_common.workflows.html#module-nvflare.app_common.workflows.scatter_and_gather_scaffold">nvflare.app_common.workflows.scatter_and_gather_scaffold module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.app_common.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.app_common.html#module-nvflare.app_common.app_constant">nvflare.app_common.app_constant module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.app_common.html#module-nvflare.app_common.app_event_type">nvflare.app_common.app_event_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.app_common.html#module-nvflare.app_common.model_desc">nvflare.app_common.model_desc module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nvflare.fuel.html">nvflare.fuel package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.fuel.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.fuel.common.html">nvflare.fuel.common package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.common.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.common.html#module-nvflare.fuel.common.ctx">nvflare.fuel.common.ctx module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.common.html#module-nvflare.fuel.common.excepts">nvflare.fuel.common.excepts module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.common.html#module-nvflare.fuel.common.multi_process_executor_constants">nvflare.fuel.common.multi_process_executor_constants module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.fuel.hci.html">nvflare.fuel.hci package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.base64_utils">nvflare.fuel.hci.base64_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.cmd_arg_utils">nvflare.fuel.hci.cmd_arg_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.conn">nvflare.fuel.hci.conn module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.file_transfer_defs">nvflare.fuel.hci.file_transfer_defs module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.proto">nvflare.fuel.hci.proto module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.reg">nvflare.fuel.hci.reg module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.security">nvflare.fuel.hci.security module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.shell_cmd_val">nvflare.fuel.hci.shell_cmd_val module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.table">nvflare.fuel.hci.table module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.hci.html#module-nvflare.fuel.hci.zip_utils">nvflare.fuel.hci.zip_utils module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.fuel.sec.html">nvflare.fuel.sec package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.sec.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.sec.html#module-nvflare.fuel.sec.audit">nvflare.fuel.sec.audit module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.sec.html#module-nvflare.fuel.sec.authz">nvflare.fuel.sec.authz module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.sec.html#module-nvflare.fuel.sec.security_content_service">nvflare.fuel.sec.security_content_service module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.fuel.utils.html">nvflare.fuel.utils package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#module-nvflare.fuel.utils.argument_utils">nvflare.fuel.utils.argument_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#module-nvflare.fuel.utils.class_utils">nvflare.fuel.utils.class_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#module-nvflare.fuel.utils.comm">nvflare.fuel.utils.comm module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#module-nvflare.fuel.utils.component_builder">nvflare.fuel.utils.component_builder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#module-nvflare.fuel.utils.dict_utils">nvflare.fuel.utils.dict_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#module-nvflare.fuel.utils.json_scanner">nvflare.fuel.utils.json_scanner module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#module-nvflare.fuel.utils.time_utils">nvflare.fuel.utils.time_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.fuel.utils.html#module-nvflare.fuel.utils.wfconf">nvflare.fuel.utils.wfconf module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nvflare.lighter.html">nvflare.lighter package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.lighter.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nvflare.lighter.impl.html">nvflare.lighter.impl package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.lighter.impl.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.lighter.impl.html#module-nvflare.lighter.impl.auth_policy">nvflare.lighter.impl.auth_policy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.lighter.impl.html#module-nvflare.lighter.impl.cert">nvflare.lighter.impl.cert module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.lighter.impl.html#module-nvflare.lighter.impl.he">nvflare.lighter.impl.he module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.lighter.impl.html#module-nvflare.lighter.impl.signature">nvflare.lighter.impl.signature module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.lighter.impl.html#module-nvflare.lighter.impl.static_file">nvflare.lighter.impl.static_file module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.lighter.impl.html#module-nvflare.lighter.impl.template">nvflare.lighter.impl.template module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nvflare.lighter.impl.html#module-nvflare.lighter.impl.workspace">nvflare.lighter.impl.workspace module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.lighter.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.lighter.html#module-nvflare.lighter.poc">nvflare.lighter.poc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.lighter.html#module-nvflare.lighter.provision">nvflare.lighter.provision module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.lighter.html#module-nvflare.lighter.spec">nvflare.lighter.spec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.lighter.html#module-nvflare.lighter.utils">nvflare.lighter.utils module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nvflare.security.html">nvflare.security package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.security.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.security.html#module-nvflare.security.security">nvflare.security.security module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nvflare.widgets.html">nvflare.widgets package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.widgets.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.widgets.html#module-nvflare.widgets.comp_caller">nvflare.widgets.comp_caller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.widgets.html#module-nvflare.widgets.fed_event">nvflare.widgets.fed_event module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.widgets.html#module-nvflare.widgets.info_collector">nvflare.widgets.info_collector module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nvflare.widgets.html#module-nvflare.widgets.widget">nvflare.widgets.widget module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="nvflare" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="nvflare.apis.html" class="btn btn-neutral float-right" title="nvflare.apis package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 - 2022, NVIDIA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+  a:link, a:visited {
+    color: #76b900;
+  }
+
+  a:hover {
+    color: #8c0;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .rst-content dl dt {
+    font-weight: unset;
+    margin-bottom: 0;
+  }
+
+  .rst-content .section ul p {
+    margin-bottom: 0px;
+  }
+  </style>
+  
+
+</body>
+</html>

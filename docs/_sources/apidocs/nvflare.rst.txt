@@ -1,0 +1,20 @@
+nvflare package
+===============
+
+.. automodule:: nvflare
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   nvflare.apis
+   nvflare.app_common
+   nvflare.fuel
+   nvflare.lighter
+   nvflare.security
+   nvflare.widgets

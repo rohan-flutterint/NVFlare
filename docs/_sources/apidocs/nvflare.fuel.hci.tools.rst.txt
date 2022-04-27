@@ -1,0 +1,34 @@
+nvflare.fuel.hci.tools package
+==============================
+
+.. automodule:: nvflare.fuel.hci.tools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+nvflare.fuel.hci.tools.admin module
+-----------------------------------
+
+.. automodule:: nvflare.fuel.hci.tools.admin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nvflare.fuel.hci.tools.authz\_preview module
+--------------------------------------------
+
+.. automodule:: nvflare.fuel.hci.tools.authz_preview
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nvflare.fuel.hci.tools.make\_pwd module
+---------------------------------------
+
+.. automodule:: nvflare.fuel.hci.tools.make_pwd
+   :members:
+   :undoc-members:
+   :show-inheritance:
